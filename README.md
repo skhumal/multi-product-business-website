@@ -11,8 +11,6 @@ This is a responsive, multi-product business website built for a seasonal and fl
 
 The site is designed to be **scalable**, allowing new products or categories to be added easily as the business grows.
 
----
-
 ## Features
 - Responsive design for desktop, tablet, and mobile
 - Hero banner to showcase the business
@@ -21,15 +19,10 @@ The site is designed to be **scalable**, allowing new products or categories to 
 - Contact section with phone, WhatsApp, and Google Maps embed
 - Easy-to-update structure for seasonal and new products
 
----
-
 ## Technologies Used
 - HTML5
 - CSS3
 - JavaScript (optional enhancements)
-- [Optional: Any framework/library if used, e.g., Bootstrap]
-
----
 
 ## Usage
 1. Clone the repository:
