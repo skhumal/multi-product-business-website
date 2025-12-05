@@ -76,43 +76,31 @@ header .logo img{
   align-items: center;
   padding: 0 8%;
   margin-top: 90px;
+  justify-content: center;
 }
 
 .hero-content{
   max-width: 750px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   gap: 12px;
+  text-align: center;
 }
 
 .business-name{
-  font-family: "Pacifico", cursive;
-  font-size: 48px;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
   color: #0078ff;
   margin-bottom: 15px;
-}
-
-.hero h2{
-  font-size: 40px;
   font-weight: 700;
-  color: #222;
-  margin-bottom: 8px;
-
-}
-
-.hero h3{
-  font-size: 24px;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 18px;
 }
 
 .hero p{
-  font-size: 18px;
+  font-size: 20px;
   color: #555;
-  max-width: 600px;
-  line-height: 1.7;
+  max-width: 700px;
+  line-height: 1.8;
   margin-bottom: 35px;
 }
 
@@ -124,6 +112,9 @@ header .logo img{
   margin-top: 8px;
   align-items: center;
   width: 100%;
+  justify-content: center;
+  text-align: center;
+  width: auto;  /* remove full width */
 }
 
 .hero-btn{
@@ -168,6 +159,23 @@ header .logo img{
 
 .hero-btn.secondary:hover{
   background: #e6f0ff;
+}
+
+.slogan{
+  border: solid 2px rgba(174,187,157,0.22);
+  padding: 6px 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  background-color: rgba(174, 187, 157, 0.08);
+  color: var(--neutral-white);
+}
+
+.span .material-symbols-outlined{
+  color: var(--muted);
+  font-size: 1.05rem;
 }
 
 /* RESPONSIVE */
