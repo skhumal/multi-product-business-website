@@ -46,6 +46,47 @@ header .logo img{
   color: #0078ff;
 }
 
+.navlist i {
+  margin-left: 4px;
+}
+
+/* DROPDOWN */
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 12px 0;
+  width: 180px;
+  display: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  z-index: 999;
+}
+
+.dropdown-menu li a{
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+}
+
+.dropdown-menu li a:hover{
+  background: #eef4ff;
+  color: #0078ff;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .btn{
   padding: 10px 14px;
   background: #0078ff;
