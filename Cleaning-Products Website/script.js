@@ -1,6 +1,17 @@
-let enu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
+// Hamburger toggle
+const hamburger = document.getElementById("hamburger");
+const navlist = document.querySelector(".navlist");
 
-menu.onclick = () => {
-  navlist.classList.toggle('open');
-};
+hamburger.addEventListener("click", () => {
+  navlist.classList.toggle("open");
+  hamburger.textContent = navlist.classList.contains("open") ? "✖" : "☰";
+});
+
+// Dropdown click toggle for mobile
+const dropdown = document.querySelector(".dropdown");
+const dropdownBtn = document.querySelector(".dropdown-btn");
+
+dropdownBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  dropdown.classList.toggle("show");
+});

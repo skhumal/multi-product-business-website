@@ -14,25 +14,50 @@
   </head>
   <body>
     <header>
-      <a href="#" class="logo"><img src="assets/images/i-do-logo.png" alt="I DO Business Logo"></a>
-      <div class="bx bx-menu" id="menu-icon"></div>
+      <a href="#home" class="logo"><img src="assets/images/i-do-logo.png" alt="I DO Business Logo"></a>
+
+      <!-- Hamburger (mobile only) -->
+        <div class="hamburger" id="hamburger">☰</div>
+        
       <ul class="navlist">
-        <li><a href="#about">Home</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+
         <li class="dropdown">
-          <a href="#services">Products<i class='bx  bxs-chevron-down'></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Cleaning Products<small>Liquid soaps, detergents...</small></a></li>
-            <li><a href="#">Car Wash Products<small>Liquid soaps, detergents...</small></a></li>
-            <li><a href="#">Cosmetics<small>Liquid soaps, detergents...</small></a></li>
-            <li><a href="#">Coffee Mugs<small>Liquid soaps, detergents...</small></a></li>
-            <li><a href="#">Shoes<small>Liquid soaps, detergents...</small></a></li>
-            <li><a href="#">Seasonal Items<small>Liquid soaps, detergents...</small></a></li>
+          <a href="#products" class="dropdown-btn">Products<i class='bx  bxs-chevron-down'></i></a>
+          
+          <!-- DESKTOP DROPDOWN -->
+           <div class="dropdown-menu desktop-dropdown">
+            <div class="col">
+              <a href="#">Cleaning Products<small>Professional-grade cleaning...</small></a>
+              <a href="#">Car Wash Products<small>Premium car care products...</small></a>
+              <a href="#">Cosmetics<small>Quality body care, perfume...</small></a>
+            </div>
+            <div class="col">
+              <a href="#">Coffee Mugs<small>Standard and customizable...</small></a>
+              <a href="#">Shoes<small>Quality footware for men,...</small></a>
+              <a href="#">Seasonal Items<small>Special items available for...</small></a>
+            </div>
+           </div>
+
+           <!-- MOBILE DROPDOWN -->
+          <ul class="mobile-dropdown">
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Cleaning Products</a></li>
+            <li><a href="#">Car Wash Products</a></li>
+            <li><a href="#">Cosmetics</a></li>
+            <li><a href="#">Coffee Mugs</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Seasonal Items</a></li>
           </ul>
         </li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Contact</a></li>
+
+        <li class="desktop-only">
+          <a href="#" class="whatsapp-btn"><i class='bx  bxl-whatsapp' style="font-size: 18px;"></i> Order on WhatsApp</a>
+        </li>
       </ul>
-      <a href="#" class="btn"><i class='bx  bxl-whatsapp' style="font-size: 18px;"></i> Order on WhatsApp</a>
+      
     </header>
     <section class="hero">
       <div class="hero-content">
