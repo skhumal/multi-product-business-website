@@ -14,4 +14,7 @@ const dropdownBtn = document.querySelector(".dropdown-btn");
 dropdownBtn.addEventListener("click", (e) => {
   e.preventDefault();
   dropdown.classList.toggle("show");
+   if (window.innerWidth <= 900) {
+    document.querySelector(".mobile-dropdown").classList.toggle("show");
+  }
 });
