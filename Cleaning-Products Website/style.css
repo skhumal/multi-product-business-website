@@ -36,7 +36,7 @@ header{
 
 .navlist{
   display: flex;
-  gap: 25px;
+  gap: 30px;
   list-style: none;
   align-items: center;
 }
@@ -211,6 +211,19 @@ header{
   border: 2px solid #0078ff;
 }
 
+.slogan{
+  background: rgba(0, 120, 255, 0.1);
+  padding: 10px 18px;
+  border-radius: 50px;
+  color: #0078ff;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(0,120,255,0.15);
+  margin-bottom: 10px;
+}
+
 /* ===================== MOBILE ===================== */
 
 @media(max-width:900px){
@@ -228,8 +241,8 @@ header{
     background:white;
     width:100%;
     flex-direction:column;
-    align-items: center;
-    padding:20px 0;
+    align-items: flex-start;
+    padding:20px 20px;
     display:none;
   }
 
@@ -252,15 +265,60 @@ header{
     display:none;
     list-style: none;
     padding-left: 0;
+    flex-direction:  column;
+    margin-top: 8px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+    gap: 10px;
+    animation: drop .25s ease;
+  }
+
+  @keyframes drop{
+  from{ opacity:0; transform: translateY(-10px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+
+  .mobile-dropdown.show{
+    max-height: 500px;
   }
 
   .mobile-dropdown li a {
-    padding: 10px 0;
+    padding: 12px 0;
     display: block;
-}
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdown-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-buttons{
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .hero-btn{
+    width: 100%;
+    justify-content: center;
+    padding: 14px 0;
+    font-size: 18px;
+  }
 
   .dropdown-btn i{
-    display: none !important;
+    transition: transform .3s;
+    display: inline-block !important;
+    margin-left: 10px;
+  }
+
+  .dropdown.show .dropdown-btn i{
+    transform: rotate(180deg);
   }
 }
 
@@ -283,8 +341,7 @@ header{
   }
 
   .desktop-only{
-    margin-left: auto;
-    margin-left: 0;
+    padding-left: 80px;
   }
 
   #hamburger{
@@ -299,5 +356,19 @@ header{
     flex: 1;
     display: flex;
     justify-content: center;
+  }
+
+  .hero-content{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .business-name{
+    font-size: 65px;
+  }
+
+  .hero p{
+    font-size: 20px;
+    line-height: 1.7;
   }
 }
